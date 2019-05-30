@@ -33,6 +33,7 @@ def get_lines(data, filename=OUTPUT_PATH, **kwargs):
 
         if isinstance(output, StringIO):
             output.truncate(0)
+            output.seek(0)
 
     for i in data:
         if isinstance(i, Indicator):
@@ -47,3 +48,4 @@ def get_lines(data, filename=OUTPUT_PATH, **kwargs):
 
         if isinstance(output, StringIO):
             output.truncate(0)
+            output.seek(0)
